@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Day In My Life</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Customize CSS here */
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #343a40 !important;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .card-img-top {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .card-img-top:hover {
+      transform: scale(1.1);
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: white;
+    }
+
+    .footer a {
+      color: white;
+    }
+
+    @media (max-width: 576px) {
+      .navbar-brand {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">A Day In My Life</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Navlink 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Navlink 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Navlink 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <p id="greeting"></p>
+      </div>
+      <div class="col-md-6 text-end">
+        <p id="currentDateTime"></p>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="enakk.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="ppp.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="kkk.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Cards -->
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="pantai.jpeg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#imageModal1">
+          <div class="card-body">
+            <h5 class="card-title">Keindahan Alam</h5>
+            <p class="card-text">Menikmati suasana hari yang suntuk dengan pergi ke pantai</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="kkk.jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#imageModal2">
+          <div class="card-body">
+            <h5 class="card-title">Hewan Kesayangan</h5>
+            <p class="card-text">Rasa jenuh akan menghadapi ujian akan sirna ketika melihat hewan kesayangan kita</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="MMM.jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#imageModal3">
+          <div class="card-body">
+            <h5 class="card-title">Kumpul Anak Rantau</h5>
+            <p class="card-text">Kadang ada kalanya kita harus bersosialisasi dengan orang satu daerah asal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer mt-auto py-3">
+    <div class="container text-center">
+      <span>© 2024 A Day In My Life. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- Image Modals -->
+  <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="pantai.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="kkk.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="MMM.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // JavaScript to display greeting and current date/time
+    function displayGreeting() {
+      const now = new Date();
+      const hour = now.getHours();
+      let greeting = '';
+
+      if (hour < 12) {
+        greeting = 'Good morning Bang Yogi!';
+      } else if (hour < 18) {
+        greeting = 'Good afternoon Bang Yogi!';
+      } else {
+        greeting = 'Good evening Bang Yogi!';
+      }
+
+      document.getElementById('greeting').textContent = greeting;
+      document.getElementById('currentDateTime').textContent = now.toLocaleString();
+    }
+
+    // Call the function initially
+    displayGreeting();
+
+    // Update the greeting and date/time every second
+    setInterval(displayGreeting, 1000);
+  </script>
+</body>
+</html>
